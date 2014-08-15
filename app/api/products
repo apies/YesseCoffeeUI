@@ -1,0 +1,25 @@
+[
+  {
+    "_id": "53e3e33db12c8999202e2e49",
+    "name": "Rainforest Black Coffee",
+    "price": 10,
+    "onSale": true
+  },
+  {
+    "_id": "53e3e362b12c8999202e2e4a",
+    "name": "Antartica White Coffee",
+    "price": 17,
+    "onSale": false
+  },
+  {
+    "_id": "53e3e38bb12c8999202e2e4b",
+    "name": "San Jose Brown Coffee",
+    "price": 7,
+    "onSale": false
+  },
+  {
+    "_id": "53e3fbb18e47da3e1985b279",
+    "name": "Jet Fuel Coffee",
+    "__v": 0
+  }
+]
