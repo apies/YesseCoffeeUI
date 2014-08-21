@@ -24,7 +24,7 @@ describe('Controller: ProductShowCtrl', function () {
     });
     $httpBackend.flush();
   }));
-  it('should show all products to the scope', function () {
+  it('should a single product *found by id* to the scope', function () {
     expect(scope.product.name).toBe('First Product');
     expect(true).toBe(true);
   });

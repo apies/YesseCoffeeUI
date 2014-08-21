@@ -27,7 +27,6 @@ describe('Controller: NewProductCtrl', function () {
     scope.saveProduct();
     $httpBackend.expectPOST('/api/products').respond({name: 'Enter Name Here'});
     $httpBackend.flush();
-    // body...
-  })
+  });
 
 });
