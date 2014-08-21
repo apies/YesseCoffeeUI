@@ -14,7 +14,7 @@ describe('Controller: AdminProductListCtrl', function () {
     Product = _Product_;
     scope = $rootScope.$new();
 
-    $httpBackend.whenGET('/products').respond([
+    $httpBackend.whenGET('/api/products').respond([
       {name: 'Light Roast', _id: 1},
       {name: 'Dark Roast', _id: 2}
     ]);
@@ -25,7 +25,7 @@ describe('Controller: AdminProductListCtrl', function () {
     $httpBackend.flush();
   }));
 
-  it('should attach a list of awesomeThings to the scope', function () {
-    expect(scope.products.length).toBe(10);
+  it('should attach a list of products to the scope', function () {
+    expect(scope.products.length).toBe(2);
   });
 });

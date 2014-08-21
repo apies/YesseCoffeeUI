@@ -35,12 +35,23 @@ angular
       })
       .state('admin', {
         url: '/admin',
-        templateUrl: '/views/admin-product-list-view.html',
+        templateUrl: '/views/admin-product-view.html',
+        
+      })
+      .state('admin.new', {
+        url: '/new',
+        templateUrl: '/views/new-product.html',
+        controller: 'NewProductControl'
+      })
+      .state('admin.list', {
+        url: '/list',
+        templateUrl: '/views/product-list.html',
         controller: 'AdminProductListCtrl'
+
       })
       .state('show', {
-        url: '/admin/show/:id',
+        url: '/show/:id',
         templateUrl: '/views/admin-show.html',
-        controller: 'AdminProductListCtrl'
+        controller: 'ProductShowCtrl'
       });
   });

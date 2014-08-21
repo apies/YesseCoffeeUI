@@ -9,14 +9,7 @@
  */
 
 var AdminProductListControl = function($scope, Product) {
-
-
-  // Product.query(function(products, error) {
-  //   $scope.products = products;
-  // });
-
   $scope.products = Product.query();
-
 }
 
 angular.module('coffeeDeYesseUiApp').controller('AdminProductListCtrl', AdminProductListControl);
